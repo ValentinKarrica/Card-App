@@ -1,0 +1,35 @@
+.boxSpinner{
+    display:flex;
+    justify-self: center;
+    width: 100%;
+    height: 200px;
+}
+
+
+.spinner {
+  display: inline-block;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  left: 48%;
+  top: 150px;
+  }
+  .spinner:after {
+    content: ' ';
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 6px solid #f08804;
+    border-color: #f08804 transparent #f08804 transparent;
+    animation: spinner 1.2s linear infinite;
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
